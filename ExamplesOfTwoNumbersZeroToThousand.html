@@ -1,0 +1,57 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+	<title>Two Numbers, Zero To Thousand | Multiplication Examplers</title>
+
+</head>
+
+<style>
+
+	#MainPage{
+	background-color:lightblue;
+	color:black;
+	}
+	
+	#FullPageRefresh{
+	background-color:black;
+	color:white;
+	width:200px;
+	height:50px;
+	}
+	
+	#ReturnToFirstPage{
+	background-color:black;
+	color:white;
+	width:100px;
+	height:50px;
+	}
+
+</style>
+
+<body id="MainPage">
+
+<!-- Two Numbers, Zero To Thousand Page Of Multiplication Examplers -->
+
+<h1>Multiplication Examplers Time: Two Numbers, 0 To 1000</h1>
+
+<script>
+
+let FirstNumberZeroToThousand = Math.floor(Math.random() * 1000)
+let SecondNumberZeroToThousand = Math.floor(Math.random() * 1000)
+let AnswersOfBothZeroToThousand = FirstNumberZeroToThousand * SecondNumberZeroToThousand
+
+document.write("<h2>" + FirstNumberZeroToThousand + " * " + SecondNumberZeroToThousand + " = " + AnswersOfBothZeroToThousand + "</h2>")
+
+</script>
+
+<br>
+<br>
+<input type="button" value="Refresh Page For New Problem" onClick="window.location.reload();" id="FullPageRefresh">
+<a href="index.html"><input type="button" value="Go Back" id="ReturnToFirstPage"></a>
+
+</body>
+
+</html>
