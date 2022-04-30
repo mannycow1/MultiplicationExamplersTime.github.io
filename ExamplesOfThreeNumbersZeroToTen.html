@@ -1,0 +1,54 @@
+<!doctype html>
+
+<html>
+
+<head>
+	<title>Three Numbers, Zero To Ten | Multiplication Examples Time</title>
+</head>
+
+<style>
+
+	#MainPage{
+	background-color:lightblue;
+	color:black;
+	}
+	
+	#FullPageRefresh{
+	background-color:black;
+	color:white;
+	width:200px;
+	height:50px;
+	}
+	
+	#ReturnToFirstPage{
+	background-color:black;
+	color:white;
+	width:100px;
+	height:50px;
+	}
+
+</style>
+
+<body id="MainPage">
+
+<h1>Multiplication Examples Time: Three Numbers, 0 To 10</h1>
+
+<script>
+
+let FirstNumberOfThreeZeroToTen = Math.floor(Math.random() * 10)
+let SecondNumberOfThreeZeroToTen = Math.floor(Math.random() * 10)
+let ThirdNumberOfThreeZeroToTen = Math.floor(Math.random() * 10)
+let AnswersOfAllZeroToTenThree = FirstNumberOfThreeZeroToTen * SecondNumberOfThreeZeroToTen * ThirdNumberOfThreeZeroToTen
+
+document.write("<h2>" + FirstNumberOfThreeZeroToTen + " * " + SecondNumberOfThreeZeroToTen + " * " + ThirdNumberOfThreeZeroToTen + " = " + AnswersOfAllZeroToTenThree)
+
+</script>
+
+<br>
+<br>
+<input type="button" value="Refresh Page For New Problem" onClick="window.location.reload()" id="FullPageRefresh">
+<a href="index.html"><input type="button" value="Go Back" id="ReturnToFirstPage"></a>
+
+</body>
+
+</html>
